@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Shared/Navbar';
 
 import HTMLIntro from './components/html/HTMLInfo';
+import JSIntro from './components/js/JSInfo';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <div className="main">
           <Switch>
             <Route exact path='/html-intro' component={HTMLIntro} />
+            <Route exact path='/js-intro' component={JSIntro} />
           </Switch>
         </div>
       </div>
