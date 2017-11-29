@@ -114,7 +114,6 @@ class CSSInfo extends Component {
                     <dd>- p is the selector<br /></dd>
                     <dd>- everything in the &#123; &#125; is the declaration<br /></dd>
                     <dd>- color is a property<br /></dd>
-                    <dd>- color is a property<br /></dd>
                     <dd>- ; ends the line of the what you want to declare<br /><br /></dd>
                     <dd>You can have multiple declarations such as below.<br /></dd>
                   &#42;&#47;
