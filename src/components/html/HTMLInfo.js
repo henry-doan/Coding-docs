@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+// a workaround for using jquery
+const $ = window.$;
 
 class HTMLInfo extends Component {
-
+  // to activate the JS for the materilze items.
+  componentDidMount = () => {
+    $('.scrollspy').scrollSpy();
+    $('.table-of-contents').pushpin({
+      top: 100
+    });
+  }
+  
   render() {
     return (
       <div className="container">
