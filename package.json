@@ -6,7 +6,6 @@
     "react-scripts": "1.0.17"
   },
   "dependencies": {
-    "materialize-css": "^0.100.2",
     "react": "15.x",
     "react-dom": "15.x",
     "react-router": "^4.2.0",
