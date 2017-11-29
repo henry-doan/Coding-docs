@@ -130,7 +130,7 @@ h1 {
 Last but not least is the most recommended and best practice is to have all the styles in a .css file
 
 ```CSS
-/* in the style.css file */
+/* in a style.css file */
 
 h1 {
     color: red;
@@ -144,7 +144,7 @@ h1 {
 
 ```
 
-### How to make a CSS file
+### How to make a CSS file 
 CSS files end in .css and like HTML files are case sensitive and it will tell web browsers that it is an CSS file and it is the **styles** of the web page. Before the .css is the name of the page, and for best practice for the main styles the name is main.css or style.css. 
 
 Here are some examples below:
@@ -168,9 +168,9 @@ In the HTML file or document, in order to have the element have the styles you w
 
 ```HTML
 <head>
-    <title>DPL Blog</title>
+    <title>My Website</title>
 
-    <!-- this is how you link the stylesheet to a HTML file -->
+    <!-- this is how you link the stylesheet to a HTML file inside of your HTML file -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 ```
@@ -188,7 +188,7 @@ p {
     - p is the selector
     - everything in the { } is the declaration
     - color is a property
-    - red is the value
+    - color is a property
     - ; ends the line of the what you want to declare
 
     You can have multiple declarations such as below.
@@ -206,7 +206,7 @@ Here is a resource of all the properties you can use on an element:
 
 >Link to the [CSS Properties](https://www.w3schools.com/cssref/)
 
-### CSS Selectors
+### Selectors
 In CSS, Selectors really depend on what you want to change. 
 
 ```CSS
@@ -279,7 +279,7 @@ This is an example of a multi-line CSS comment:
 */
 ```
 
-### CSS Colors
+### Colors
 
 In CSS, color is represented in a number of different ways and it is just up  to the developer to choose what is more useful to code.
 
@@ -291,7 +291,7 @@ h1 {
 }
 ```
 
-The second way is with **RGB** or **RGBA** values of have numbers represents the red, green, blue or alpha in a color. Alpha is the opacity of a color.The Alpha values are only ranging from 0 to 1. The RGB and the RGBA needs numbers in the parameters and are between 0 through 255. You can also pass in percentages and decimals for intensity as well.
+The second way is with **RGB** or **RGBA** values of have numbers represents the red, green, blue or alpha in a color. Alpha is the opacity of a color. The Alpha values are only ranging from 0 to 1. The RGB and the RGBA needs numbers in the parameters and are between 0 through 255. You can also pass in percentages and decimals for intensity as well.
 
 ```CSS
 h1 {
@@ -328,13 +328,13 @@ h2 {
 }
 
 h3 {
-    color: hsla)(30%, 2.1, 12, 0.3);
+    color: hsla(30%, 2.1, 12, 0.3);
 }
 ```
 
 >Here is a reference for [colors](https://www.w3schools.com/colors/colors_names.asp)
 
-### CSS Unit of Measurements
+### Unit of Measurements
 
 When styling you might want to change the size of some elements and this is achieved by two ways, one is **Relative** Measurements and the other is **Absolute** Measurements. 
 
@@ -369,18 +369,14 @@ img {
     background-size: 40%; /* This is the viewport's percentage. */
 }
 
-.nav-background {
-    background-size: 40%; /* This is the viewport's percentage. */
-}
-
 /* The next two are rarely used */
 
 span {
-    font-size: 5ch; /* This is relative to the width of the zero character "0".
+    font-size: 5ch; /* This is relative to the width of the zero character "0". */
 }
 
 span {
-    font-size: 5ex; /* This is relative to the x height of the current element.
+    font-size: 5ex; /* This is relative to the x height of the current element. */
 }
 ```
 
@@ -431,7 +427,9 @@ p {
 }
 ```
 
-If you are using a external font, you would have to import them by CDN or either downloading it. Depending on where you got the font, you would have to follow their documentation. For example for google font.
+If you are using a external font, you would have to import them by CDN or either downloading it. Depending on where you got the font, you would have to follow their documentation.
+
+For example for google fonts.
 
 ```HTML 
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -442,7 +440,7 @@ or in the CSS
     @import url('https://fonts.googleapis.com/css?family=Pacifico');
 ```
 
-then you can use it:
+Then to put it to use in your CSS:
 ```CSS
 p {
     font-family: 'Pacifico', cursive;

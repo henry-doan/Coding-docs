@@ -7,7 +7,8 @@ class Navbar extends Component {
       <div>
         <ul id="slide-out" className="side-nav fixed">
           <li><Link to='/html-intro'>HTML</Link></li>
-          <li><a href="#!">Second Sidebar Link</a></li>
+
+          <li><Link to='/css-intro'>CSS</Link></li>
         </ul>
         <a href="#" data-activates="slide-out" className="button-collapse"><i className="material-icons">menu</i></a>
       </div>
