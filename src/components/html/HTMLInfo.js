@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+// a workaround for using jquery
+const $ = window.$;
 
 class HTMLInfo extends Component {
-
+  // to activate the JS for the materilze items.
+  componentDidMount = () => {
+    $('.scrollspy').scrollSpy();
+    $('.table-of-contents').pushpin({
+      top: 100
+    });
+  }
+  
   render() {
     return (
       <div className="container">
@@ -35,13 +44,13 @@ class HTMLInfo extends Component {
 
             <div id="syntax" className="section scrollspy">
               <h5>Syntax</h5>
-              <p>Every programming language has different ways to write in the language, this is called Syntax. The Syntax for the HTML language has and opening and closing tag, with content in between. Opening tags in HTML starts with a less than symbol &#8826; then the tag keyword and finally a less than symbol &#8827;. Closing tags have the same format but a / before the tag keyword to show that it is an ending tag.</p>
-              <code>&#8826;!-- this is a opening tag:
-                &#8826;p&#8827;
+              <p>Every programming language has different ways to write in the language, this is called Syntax. The Syntax for the HTML language has and opening and closing tag, with content in between. Opening tags in HTML starts with a less than symbol &#60; then the tag keyword and finally a less than symbol &#62;. Closing tags have the same format but a / before the tag keyword to show that it is an ending tag.</p>
+              <code>&#60;!-- this is a opening tag:
+                &#60;p&#62;
                   this is a closing tag:
-                &#8826;/p&#8827;
-                --&#8827;
-                &#8826;p&#8827;Content goes here&#8826;/p&#8827;
+                &#60;/p&#62;
+                --&#62;
+                &#60;p&#62;Content goes here&#60;/p&#62;
               </code>
             </div>
 
@@ -49,7 +58,7 @@ class HTMLInfo extends Component {
               <h5>Attributes</h5>
               <p>HTML elements has many attributes and each element has there own specific attribute. But the most common attributes for HTML elements are Class and Id.</p>
               <code>
-                &#8826;h1 class="name_of_the_class" id="name_of_the_id"&#8827;&#8826;/h1&#8827;
+                &#60;h1 class="name_of_the_class" id="name_of_the_id"&#62;&#60;/h1&#62;
               </code>
               <p>Classes and ids can be named anything but it can't start with a symbol or a number. The purpose of these attributes is for giving specific classification for elements to be referenced to in another language such as styling, and behavior.</p>
               <p>Classes and ids are not required in writing elements and you can have one or the other or none, it is just best practice to have them and are needed in styling and behaviors.</p>
@@ -59,22 +68,22 @@ class HTMLInfo extends Component {
               <h5>HTML Comments</h5>
               <p>This is an example of a HTML comment:</p>
               <code>
-                &#8826;!-- This is a HTML comment --&#8827;
+                &#60;!-- This is a HTML comment --&#62;
               </code>
               <p>Everything in the comment will not run or show up in the browser. Developers uses code comments to take notes on certain pieces of code, or have TODOS, or even to not show a block of code without deleting it. Every programming language has its own commenting syntax.You can also do single line comments or multi-line comments as well.</p>
               <p>This is an example of a single line HTML comment:</p>
               <code>
-                &#8826;!-- This is a single line HTML comment --&#8827;
+                &#60;!-- This is a single line HTML comment --&#62;
               </code>
               <p>This is an example of a multi-line HTML comment:</p>
               <code>
                 <dl>
-                &#8826;!-- 
+                &#60;!-- 
                 <br />
                 <dd>This is a<br /></dd>
                 <dd>multi-line<br /></dd>
                 <dd>HTML comment<br /></dd>
-                --&#8827;
+                --&#62;
                 </dl>
               </code>
             </div>
@@ -83,15 +92,15 @@ class HTMLInfo extends Component {
               <h5>Header</h5>
               <p>Anything that is inside of a <b>Header</b> tags goes on top of the page and this is usually used for the nav bar for the pages' logo and links to other pages.</p>
               <code>
-                &#8826;header&#8827;&#8826;/header&#8827;
+                &#60;header&#62;&#60;/header&#62;
               </code>
             </div>
 
             <div id="footer" className="section scrollspy">
               <h5>Footer</h5>
-              <p>Like the Header tag anything that is inside of the <b>Footer</b> tags, it will show up on the bottom of the web page. This is used primarily for web pages' footers. </p>
+              <p>Like the Header tag anything that is inside of the <b>Footer</b> tags, it will show up on the bottom of the web page. This is used primarily for web pages' footers.</p>
               <code>
-                &#8826;footer&#8827;&#8826;/footer&#8827;
+                &#60;footer&#62;&#60;/footer&#62;
               </code>
             </div>
 
