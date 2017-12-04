@@ -8,16 +8,20 @@ body {
   padding-left: 300px;
 }
 
+/* to move main text over */
 @media only screen and (max-width : 992px) {
  .main {
     padding-left: 0;
   }
 }
 
-.table-of-contents a.active {
+.table-of-contents a.active, .table-of-contents a:hover{
     border-left: 2px solid #90a4ae; 
 }
 
-.table-of-contents a:hover{
-    border-left: 2px solid #90a4ae; 
+.code-box {
+  background: rgb(245, 245, 245);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 9.5px;
+  border-radius: 3px;
 }
