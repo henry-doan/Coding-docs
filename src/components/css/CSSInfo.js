@@ -484,8 +484,25 @@ class CSSInfo extends Component {
               </div>
             </div>
 
+            <div id="box" className="section scrollspy">
+              <h5>Box Model</h5>
+              <p>All HTML tags generate some sort of content to a web page and all of the content on the page is wrapped with a box. This is called the <b>Box Model</b> and inside of this box, we are able to add spacing and borders between HTML elements.</p>
+              <p>The diagram below portrays the box model:</p>
+              <div className="box-model">
+                <div className="margin box">
+                  <div className="border box">
+                    <div className="padding box">
+                      <div className="content box">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
             <div id="typo" className="section scrollspy">
-              <h5>Fonts and Typography </h5>
+              <h5>Fonts and Typography</h5>
               <p>For styling fonts there are limitation depending on web browsers and versioning  of the browsers. The browser does have some default fonts you can work with. To use the default fonts you can just have them in a string and in them the font name and it does not matter if it is capitalize or not.</p>
               <div className="code-box">
                 <code>
@@ -548,6 +565,7 @@ class CSSInfo extends Component {
               <li><a href="#comment">Comment</a></li>
               <li><a href="#colors">Colors</a></li>
               <li><a href="#units">Unit of Measurements</a></li>
+              <li><a href="#box">Box Model</a></li>
               <li><a href="#typo">Fonts and Typography</a></li>
             </ul>
           </div>
