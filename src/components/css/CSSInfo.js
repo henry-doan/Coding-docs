@@ -7,7 +7,7 @@ class CSSInfo extends Component {
   componentDidMount = () => {
     $('.scrollspy').scrollSpy();
     $('.table-of-contents').pushpin({
-      top: 100
+      top: 200
     });
   }
   

@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+// a workaround for using jquery
+const $ = window.$;
 
 class JSInfo extends Component {
+// to activate the JS for the materilze items.
+  componentDidMount = () => {
+    $('.scrollspy').scrollSpy();
+    $('.table-of-contents').pushpin({
+      top: 200
+    });
+  }
 
   render() {
     return (
@@ -24,6 +33,9 @@ class JSInfo extends Component {
               {/* good data here: www.w3schools.com/js/js_intro.asp */}
             </div>
 
+
+{/* for when they need to reference an html element and id - just tell them to go to the HTML docs */}
+{/* links to codepen to see how some JS examples work - end goal to write code in app */}
             <div id="structure" className="section scrollspy">
               <h5>How to make a JS file</h5>
               <p>
@@ -31,11 +43,13 @@ class JSInfo extends Component {
                 JavaScript files end in ".js"
                 Here are some example JavaScript file names:
               </p>
-              <code>
-                main.js<br />
-                contacts.js<br />
-                about.js<br />
-              </code>
+              <div className="code-box">
+                <code>
+                  main.js<br />
+                  contacts.js<br />
+                  about.js<br />
+                </code>
+              </div>
             </div>
 
             <div id="syntax" className="section scrollspy">
@@ -48,11 +62,13 @@ class JSInfo extends Component {
               <p>
                 ...Need to explain var, console.log and getElementById()...
               </p>
-              <code>
-                &#60;div id="yellow"&#62;Hi there!&#60;/div&#62;<br />
-                <nobr>var yellow = document.getElementById('yellow').innerHTML</nobr><br />
-                console.log(yellow)
-              </code>
+              <div className="code-box">
+                <code>
+                  &#60;div id="yellow"&#62;Hi there!&#60;/div&#62;<br />
+                  <nobr>var yellow = document.getElementById('yellow').innerHTML</nobr><br />
+                  console.log(yellow)
+                </code>
+              </div>
               <p>
                 This console.log with output "Hi there!"
 
@@ -75,9 +91,11 @@ class JSInfo extends Component {
               <p>
                 To make a comment in JavaScript, start the line of code with "//"
               </p>
-              <code>
-                // This is a JS comment
-              </code>
+              <div className="code-box">
+                <code>
+                  // This is a JS comment
+                </code>
+              </div>
             </div>
 
           </div>

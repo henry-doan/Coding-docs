@@ -6,9 +6,14 @@ class Navbar extends Component {
     return (
       <div>
         <ul id="slide-out" className="side-nav fixed">
+          <li><Link to='/overview'>Overview</Link></li>
+          <hr/>
           <li><Link to='/html-intro'>HTML</Link></li>
           <li><Link to='/css-intro'>CSS</Link></li>
           <li><Link to='/js-intro'>JavaScript</Link></li>
+          <hr/>
+          <li><Link to='/cl-intro'>Command Line</Link></li>
+          <li><Link to='/ruby-intro'>Ruby</Link></li>
         </ul>
         <a href="#" data-activates="slide-out" className="button-collapse"><i className="material-icons">menu</i></a>
       </div>
