@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+// a workaround for using jquery
+const $ = window.$;
 
 class Navbar extends Component {
+  // to activate the JS for the materilze items.
+  componentDidMount = () => {
+    $(".button-collapse").sideNav();
+  }
+
   render() {
     return (
       <div>
@@ -15,7 +22,7 @@ class Navbar extends Component {
           <li><Link to='/cl-intro'>Command Line</Link></li>
           <li><Link to='/ruby-intro'>Ruby</Link></li>
         </ul>
-        <a href="#" data-activates="slide-out" className="button-collapse"><i className="material-icons">menu</i></a>
+        <a data-activates="slide-out" className="button-collapse"><i className="material-icons medium side-nav-icon">menu</i></a>
       </div>
     );
   }
