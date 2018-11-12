@@ -417,7 +417,7 @@ class CSSInfo extends Component {
               </div>
               <br />
               <p><b>Absolute</b> units of measures are a set size for elements. Most of the measurements are based off of the inch measurement.</p>
-              <p>First off we have cm is centimeters. There are 2.54 centimeters in a inch</p>
+              <p>First off we have <b>cm</b> is centimeters. There are 2.54 centimeters in a inch</p>
               <div className="code-box">  
                 <code>
                   <dl>
@@ -450,7 +450,7 @@ class CSSInfo extends Component {
                 </code>
               </div>
               <br />
-              <p>px or pixels, are standardize in the tech industry. There are 96 pixels in a inch.</p>
+              <p><b>px</b> or pixels, are standardize in the tech industry. There are 96 pixels in a inch.</p>
               <div className="code-box">
                 <code>
                   <dl>
@@ -486,7 +486,7 @@ class CSSInfo extends Component {
 
             <div id="box" className="section scrollspy">
               <h5>Box Model</h5>
-              <p>All HTML tags generate some sort of content to a web page and all of the content on the page is wrapped with a box. This is called the <b>Box Model</b> and inside of this box, we are able to add spacing and borders between HTML elements.</p>
+              <p>All HTML tags generate content to a web page and all of the content on the page is wrapped within a box. This is called the <b>Box Model</b> and inside of this box, we are able to add positioning, styles, spacing and borders on HTML elements.</p>
               <p>The diagram below portrays the box model:</p>
               <div className="box-model">
                 <div className="margin box">
@@ -498,7 +498,19 @@ class CSSInfo extends Component {
                   </div>
                 </div>
               </div>
-              
+              <br />
+              <h6>Content</h6>
+              <p>The inner most section of the box model is the content. With the content you can manipulate the width and height of the content with using units of measurement.</p>
+              <div className="code-box">
+                <code>
+                  <dl>
+                    h1 &#123;
+                    <dd>width: 40px;</dd>
+                    <dd>height: 100px;</dd>
+                    &#125;
+                  </dl>
+                </code>
+              </div>
             </div>
 
             <div id="typo" className="section scrollspy">
