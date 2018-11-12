@@ -456,7 +456,7 @@ TODOS
 * [x] Explain how files are in a certain language, .html, .css etc.
 * [x] Link live Project
 * [ ] Box Model
-* [ ] DOM
+* [/] DOM
 * [x] How Pages Connects
 * [ ] Have examples of all of the elements
 * [ ] Have examples of all of the properties

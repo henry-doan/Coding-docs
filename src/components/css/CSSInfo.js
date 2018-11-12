@@ -499,14 +499,62 @@ class CSSInfo extends Component {
                 </div>
               </div>
               <br />
-              <h6>Content</h6>
-              <p>The inner most section of the box model is the content. With the content you can manipulate the width and height of the content with using units of measurement.</p>
+              <h6><b>Content</b></h6>
+              <p>The inner most section of the box model is the <b>content</b> where it consist of the HTML tags and what they contain. With the content you can manipulate the width and height of the content with using units of measurement.</p>
               <div className="code-box">
                 <code>
                   <dl>
                     h1 &#123;
                     <dd>width: 40px;</dd>
                     <dd>height: 100px;</dd>
+                    &#125;
+                  </dl>
+                </code>
+              </div>
+              <br />
+              <h6><b>Padding</b></h6>
+              <p>One level outside of the content is <b>padding</b>. With padding you can change the spacing around the content.</p>
+              <div className="code-box">
+                <code>
+                  <dl>
+                    h1 &#123;
+                    <dd>padding: 10px;</dd>
+                    &#125;
+                  </dl>
+                </code>
+              </div>
+              <p>For padding, if you set one value, all of the sides will be the value that is inputted. For the example above, the h1 element will have 10px on the top, right, bottom, left sides.</p>
+              <p>If you set the value of padding to have two measurement then the first number will be the padding of the top and bottom sides and the second number will be for the left and right padding as follows:</p>
+              <div className="code-box">
+                <code>
+                  <dl>
+                    h1 &#123;
+                    <dd>padding: 10px 30px;</dd>
+                    &#125;
+                  </dl>
+                </code>
+              </div>
+              <p>This h1 element has the padding of 10px for the top and bottom and 30px for the left and right padding.</p>
+              <p>Having four values for padding gives spacing for all the sides and specifies the padding of top, right, bottom, and left.</p>
+              <div className="code-box">
+                <code>
+                  <dl>
+                    p &#123;
+                    <dd>padding: 10px 30px 60px 15px;</dd>
+                    &#125;
+                  </dl>
+                </code>
+              </div>
+              <p>The above element has the padding of 10px for the top, 30px for the right, 60px for the bottom, and 15px for the left side.</p>
+              <p>Finally, the padding can be declared on multiple lines instead of a single line where you can specify padding on certain sides.</p>
+              <div className="code-box">
+                <code>
+                  <dl>
+                    h3 &#123;
+                    <dd>padding-top: 20px;</dd>
+                    <dd>padding-right: 10px;</dd>
+                    <dd>padding-bottom: 30px;</dd>
+                    <dd>padding-left: 15px;</dd>
                     &#125;
                   </dl>
                 </code>
