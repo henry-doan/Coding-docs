@@ -559,6 +559,22 @@ class CSSInfo extends Component {
                   </dl>
                 </code>
               </div>
+              <br />
+              <h6><b>Border</b></h6>
+              <p>One layer outside of padding is <b>border</b> and in this level of the box model, not only can we manipulate the size and position, but also we can manipulate the styles.</p>
+              <p>The border specifies the edge of the padding and we can have it look a certain way</p>
+              <p>For example, to add a border to an element, you do the following</p>
+              <div className="code-box">
+                <code>
+                  <dl>
+                    img &#123;
+                    <dd>border: 3px solid green;</dd>
+                    &#125;
+                  </dl>
+                </code>
+              </div>
+              <p>The example above uses just the border property and takes in three arguments, the first being the size of the border, second is the type of border, and the last is the color of the border.</p>
+              <p>In the example, the image tag has a border 3px thick, with a solid type of border style, and lastly is colored green.</p>
             </div>
 
             <div id="typo" className="section scrollspy">
