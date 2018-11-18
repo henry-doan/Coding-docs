@@ -485,7 +485,7 @@ class CSSInfo extends Component {
             </div>
 
             <div id="box" className="section scrollspy">
-              <h5>Box Model</h5>
+              <h5>The Box Model</h5>
               <p>All HTML tags generate content to a web page and all of the content on the page is wrapped within a box. This is called the <b>Box Model</b> and inside of this box, we are able to add positioning, styles, spacing and borders on HTML elements.</p>
               <p>The diagram below portrays the box model:</p>
               <div className="box-model">

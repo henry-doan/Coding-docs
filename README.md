@@ -409,6 +409,20 @@ h1 {
 
 ```
 
+### The Boc Model
+All HTML tags generate content to a web page and all of the content on the page is wrapped within a box. This is called the <b>Box Model</b> and inside of this box, we are able to add positioning, styles, spacing and borders on HTML elements.
+
+<b>Content</b>
+The inner most section of the box model is the <b>content</b> where it consist of the HTML tags and what they contain. With the content you can manipulate the width and height of the content with using units of measurement.
+
+```CSS
+h1 {
+    width: 40px;
+    height: 100px;
+}
+```
+
+
 ### Fonts and Typography 
 
 For styling fonts there are limitation depending on web browsers and versioning  of the browsers. The browser does have some default fonts you can work with. To use the default fonts you can just have them in a string and in them the font name and it does not matter if it is capitalize or not.
