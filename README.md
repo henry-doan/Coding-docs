@@ -76,9 +76,9 @@ This is an example of a multi-line HTML comment:
 
 ```HTML
 <!-- 
-    This is a 
-    multi-line 
-    HTML comment 
+  This is a 
+  multi-line 
+  HTML comment 
 -->
 ```
 
@@ -115,13 +115,13 @@ There are three ways to style a web page, in line styling, style tag, and anothe
 ```HTML
 <style>
 h1 {
-    color: red;
-    font-size: 24px;
+  color: red;
+  font-size: 24px;
 }
 
 .nav-bar {
-    background-color: green;
-    opacity: 0.3;
+  background-color: green;
+  opacity: 0.3;
 }
 
 </style>
@@ -133,13 +133,13 @@ Last but not least is the most recommended and best practice is to have all the 
 /* in a style.css file */
 
 h1 {
-    color: red;
-    font-size: 24px;
+  color: red;
+  font-size: 24px;
 }
 
 .nav-bar {
-    background-color: green;
-    opacity: 0.3;
+  background-color: green;
+  opacity: 0.3;
 }
 
 ```
@@ -168,10 +168,10 @@ In the HTML file or document, in order to have the element have the styles you w
 
 ```HTML
 <head>
-    <title>My Website</title>
+  <title>My Website</title>
 
-    <!-- this is how you link the stylesheet to a HTML file inside of your HTML file -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- this is how you link the stylesheet to a HTML file inside of your HTML file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 ```
 
@@ -181,23 +181,23 @@ The **Syntax** for the CSS language is a very different than the HTML **Syntax**
 ```CSS
 
 p {
-    color: red;
+  color: red;
 }
 
 /* 
-    - p is the selector
-    - everything in the { } is the declaration
-    - color is a property
-    - color is a property
-    - ; ends the line of the what you want to declare
+  - p is the selector
+  - everything in the { } is the declaration
+  - color is a property
+  - color is a property
+  - ; ends the line of the what you want to declare
 
-    You can have multiple declarations such as below.
+  You can have multiple declarations such as below.
  */
 
 h1 {
-    padding: 10px;
-    color: green;
-    font-size: 32px;
+  padding: 10px;
+  color: green;
+  font-size: 32px;
 }
 
 ```
@@ -229,7 +229,7 @@ In CSS you can also chain selectors together to span the same styles across from
 
 ```CSS
 h1, p, b {
-    color: green;
+  color: green;
 }
 ```
 
@@ -237,12 +237,12 @@ If you have embedded elements in the HTML such as:
 
 ```HTML
 <div class="box">
-    <div id="little_box">
-        <p>Doll</p>
-    </div>
-    <div id="big_box">
-        <p>Toy</p>
-    </div>
+  <div id="little_box">
+    <p>Doll</p>
+  </div>
+  <div id="big_box">
+    <p>Toy</p>
+  </div>
 </div>
 ```
 
@@ -250,7 +250,7 @@ To just style the p tag with the doll you can put a id or class on it or you can
 
 ```CSS
 .box #little_box p {
-    color: blue;
+  color: blue;
 }
 ```
 
@@ -273,9 +273,9 @@ This is an example of a multi-line CSS comment:
 
 ```CSS
 /* 
-    This is a 
-    multi-line CSS 
-    comment. 
+  This is a 
+  multi-line CSS 
+  comment. 
 */
 ```
 
@@ -287,7 +287,7 @@ The first way is with **keywords** that represent colors that are predefined in 
 
 ```CSS
 h1 {
-    color: grey;
+  color: grey;
 }
 ```
 
@@ -295,15 +295,15 @@ The second way is with **RGB** or **RGBA** values of have numbers represents the
 
 ```CSS
 h1 {
-    color: rgb(80, 80, 80);
+  color: rgb(80, 80, 80);
 }
 
 h2 {
-    color: rgba(90, 255, 20, 0.2);
+  color: rgba(90, 255, 20, 0.2);
 }
 
 h3 {
-    color: rgba(10%, 255, 0.2, 0);
+  color: rgba(10%, 255, 0.2, 0);
 }
 
 ```
@@ -312,7 +312,7 @@ Another way to represent color is **Hexadecimal** numbers that are 6 numbers tha
 
 ```CSS
 h1 {
-    color: #00ff02;
+  color: #00ff02;
 }
 ```
 
@@ -320,15 +320,15 @@ The last method is **HSL** or **HSLA** which represent Hue, Saturation, Lightnes
 
 ```CSS
 h1 {
-    color: hsl(120, 120, 120);
+  color: hsl(120, 120, 120);
 }
 
 h2 {
-    color: hsla(120, 200, 12, 0.2);
+  color: hsla(120, 200, 12, 0.2);
 }
 
 h3 {
-    color: hsla(30%, 2.1, 12, 0.3);
+  color: hsla(30%, 2.1, 12, 0.3);
 }
 ```
 
@@ -342,41 +342,41 @@ When styling you might want to change the size of some elements and this is achi
 
 ```CSS
 h1 {
-    font-size: 40em; /* em is relative to font size of the selector element so 40em is 40 times the originals h1 font size. */
+  font-size: 40em; /* em is relative to font size of the selector element so 40em is 40 times the originals h1 font size. */
 }
 
 h1 {
-    font-size: 40rem; /* rem is is relative to font size of the root element whatever root element of the selector element is. */
+  font-size: 40rem; /* rem is is relative to font size of the root element whatever root element of the selector element is. */
 }
 
 img {
-    background-size: 80vh; /* vh or view height is the number of percentage of the height of the viewport or what the user can see on the screen. */
+  background-size: 80vh; /* vh or view height is the number of percentage of the height of the viewport or what the user can see on the screen. */
 }
 
 img {
-    background-size: 80vw; /* vw or view width is the number of percentage of the width of the viewport or what the user can see on the screen. */
+  background-size: 80vw; /* vw or view width is the number of percentage of the width of the viewport or what the user can see on the screen. */
 }
 
 .nav-background {
-    background-size: 40vmin; /* This is the viewport's minimum dimensions. */
+  background-size: 40vmin; /* This is the viewport's minimum dimensions. */
 }
 
 .nav-background {
-    background-size: 40vmax; /* This is the viewport's maximum dimensions. */
+  background-size: 40vmax; /* This is the viewport's maximum dimensions. */
 }
 
 .nav-background {
-    background-size: 40%; /* This is the viewport's percentage. */
+  background-size: 40%; /* This is the viewport's percentage. */
 }
 
 /* The next two are rarely used */
 
 span {
-    font-size: 5ch; /* This is relative to the width of the zero character "0". */
+  font-size: 5ch; /* This is relative to the width of the zero character "0". */
 }
 
 span {
-    font-size: 5ex; /* This is relative to the x height of the current element. */
+  font-size: 5ex; /* This is relative to the x height of the current element. */
 }
 ```
 
@@ -384,41 +384,49 @@ span {
 
 ```CSS
 h1 {
-    font-size: 40cm; /* cm is centimeters. There are 2.54 centimeters in a inch. */
+  font-size: 40cm; /* cm is centimeters. There are 2.54 centimeters in a inch. */
 }
 
 h1 {
-    font-size: 40mm; /* mm is millimeters, there are 10 millimeters in one centimeter.  */
+  font-size: 40mm; /* mm is millimeters, there are 10 millimeters in one centimeter.  */
 }
 
 h1 {
-    font-size: 36in; /* in is inches. */
+  font-size: 36in; /* in is inches. */
 }
 
 h1 {
-    font-size: 40px; /* px is pixels which is standardize in the tech industry. There are 96 pixels in a inch. */
+  font-size: 40px; /* px is pixels which is standardize in the tech industry. There are 96 pixels in a inch. */
 }
 
 h1 {
-    font-size: 40pt; /* pt is points. There are 72 points in a inch. */
+  font-size: 40pt; /* pt is points. There are 72 points in a inch. */
 }
 
 h1 {
-    font-size: 40pc; /* pc is picas. One picas is 12 points. */
+  font-size: 40pc; /* pc is picas. One picas is 12 points. */
 }
 
 ```
 
-### The Boc Model
-All HTML tags generate content to a web page and all of the content on the page is wrapped within a box. This is called the <b>Box Model</b> and inside of this box, we are able to add positioning, styles, spacing and borders on HTML elements.
+### The Box Model
+All HTML tags generate content to a web page and all of the content on the page is wrapped within a box. This is called the **Box Model** and inside of this box, we are able to add positioning, styles, spacing and borders on HTML elements.
 
-<b>Content</b>
-The inner most section of the box model is the <b>content</b> where it consist of the HTML tags and what they contain. With the content you can manipulate the width and height of the content with using units of measurement.
+**Content**
+The inner most section of the box model is the **content** where it consist of the HTML tags and what they contain. With the content you can manipulate the width and height of the content with using units of measurement.
 
 ```CSS
 h1 {
-    width: 40px;
-    height: 100px;
+  width: 40px;
+  height: 100px;
+}
+```
+
+**Padding**
+One level outside of the content is **padding**. With padding you can change the spacing around the content.
+```CSS
+h1 {
+  padding: 10px;
 }
 ```
 
@@ -429,7 +437,7 @@ For styling fonts there are limitation depending on web browsers and versioning 
 
 ```CSS
 h1 {
-    font-family: 'Times';
+  font-family: 'Times';
 }
 ```
 
@@ -437,7 +445,7 @@ You can also chain fonts one after the other to cover if the browser supports it
 
 ```CSS
 p {
-    font-family: 'Times', 'Arial', 'Serif';
+  font-family: 'Times', 'Arial', 'Serif';
 }
 ```
 
@@ -446,18 +454,18 @@ If you are using a external font, you would have to import them by CDN or either
 For example for google fonts.
 
 ```HTML 
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 ```
 
 or in the CSS
 ```CSS
-    @import url('https://fonts.googleapis.com/css?family=Pacifico');
+  @import url('https://fonts.googleapis.com/css?family=Pacifico');
 ```
 
 Then to put it to use in your CSS:
 ```CSS
 p {
-    font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive;
 }
 ```
 
