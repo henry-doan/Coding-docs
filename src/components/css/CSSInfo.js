@@ -562,7 +562,7 @@ class CSSInfo extends Component {
               <br />
               <h6><b>Border</b></h6>
               <p>One layer outside of padding is <b>border</b> and in this level of the box model, not only can we manipulate the size and position, but also we can manipulate the styles.</p>
-              <p>The border specifies the edge of the padding and we can have it look a certain way</p>
+              <p>The border specifies the edge of the padding and we can have it look a certain way.</p>
               <p>For example, to add a border to an element, you do the following</p>
               <div className="code-box">
                 <code>
