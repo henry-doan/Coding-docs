@@ -575,6 +575,20 @@ class CSSInfo extends Component {
               </div>
               <p>The example above uses just the border property and takes in three arguments, the first being the size of the border, second is the type of border, and the last is the color of the border.</p>
               <p>In the example, the image tag has a border 3px thick, with a solid type of border style, and lastly is colored green.</p>
+              <p>The declaration of the first argument takes in a unit of measurement for the border size. The last argument takes in any color using the color css conventions.</p>
+              <p>The second argument assigns a style to the border and can be one of these options: </p>
+              <ul>
+                <li className='none_border bex'>none</li>
+                <li className='hidden_border bex'>hidden</li>
+                <li className='solid_border bex'>solid</li>
+                <li className='dashed_border bex'>dashed</li>
+                <li className='dotted_border bex'>dotted</li>
+                <li className='double_border bex'>double</li>
+                <li className='groove_border bex'>groove</li>
+                <li className='inset_border bex'>inset</li>
+                <li className='outset_border bex'>outset</li>
+                <li className='ridge_border bex'>ridge</li>
+              </ul>
             </div>
 
             <div id="typo" className="section scrollspy">

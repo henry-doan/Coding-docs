@@ -81,3 +81,48 @@ body {
 .box-model .content:before {
   content: "Content";  
 }
+
+.bex {
+  margin-top: 2%;
+}
+
+.none_border {
+  border-style: none;
+}
+
+.hidden_border {
+  border-style: hidden;
+}
+
+.solid_border {
+  border-style: solid;
+}
+
+.dashed_border {
+  border-style: dashed;
+}
+
+.dotted_border {
+  border-style: dotted;
+}
+
+.double_border {
+  border-style: double;
+}
+
+.groove_border {
+  border-style: groove;
+}
+
+.inset_border {
+  border-style: inset;
+}
+
+.outset_border {
+  border-style: outset;
+}
+
+.ridge_border {
+  border-style: ridge;
+}
+
