@@ -480,6 +480,21 @@ The example above uses just the border property and takes in three arguments, th
 
 In the example, the image tag has a border 3px thick, with a solid type of border style, and lastly is colored green.
 
+The declaration of the first argument takes in a unit of measurement for the border size. The last argument takes in any color using the color css conventions.
+
+The second argument assigns a style to the border and can be one of these options:
+
+- none
+- hidden
+- solid
+- dashed
+- dotted
+- double
+- groove
+- inset
+- outset
+- ridge
+
 ### Fonts and Typography 
 
 For styling fonts there are limitation depending on web browsers and versioning  of the browsers. The browser does have some default fonts you can work with. To use the default fonts you can just have them in a string and in them the font name and it does not matter if it is capitalize or not.
