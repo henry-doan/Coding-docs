@@ -38,6 +38,12 @@ class JSInfo extends Component {
               </p>
             </div>
 
+            <div id="history" className="section scrollspy">
+              <p>
+                {/* TODO */}
+              </p>
+            </div>
+
             <div id="files" className="section scrollspy">
               <h5>How to Make a JS File</h5>
               <p>
@@ -52,6 +58,22 @@ class JSInfo extends Component {
                   about.js<br />
                 </code>
               </div>
+            </div>
+
+            <div id="data-types" className="section scrollspy">
+              <p>
+                {/* TODO */}
+              </p>
+            </div>
+            <div id="operators" className="section scrollspy">
+              <p>
+                {/* TODO */}
+              </p>
+            </div>
+            <div id="comparators" className="section scrollspy">
+              <p>
+                {/* TODO */}
+              </p>
             </div>
 
             <div id="var" className="section scrollspy">
@@ -173,7 +195,11 @@ class JSInfo extends Component {
           <div className="col hide-on-small-only m3 l2">
             <ul className="section table-of-contents">
               <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#history">History</a></li>
               <li><a href="#files">JS Files</a></li>
+              <li><a href="#data-types">Data Types</a></li>
+              <li><a href="#operators">Operators</a></li>
+              <li><a href="#comparators">Comparators</a></li>
               {/* <li><a href="#initialization">Intialization</a></li> */}
               <li><a href="#var">Variables</a></li>
               <li><a href="#console-log">Console Log</a></li>
