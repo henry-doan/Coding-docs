@@ -76,6 +76,68 @@ class JSInfo extends Component {
                   about.js<br />
                 </code>
               </div>
+              <h5>How to Connect a JS file to a HTML file</h5>
+              <p>
+                After you created both a JS file and a HTML file, there needs to be a way where you can
+                link the two file together.
+
+                That is where we bring back the script tag. The script tag has a second purpose of linking
+                a JS file to a HTML file like so:
+              </p>
+              <div className="code-box">
+                <code>
+                  <script src='app.js'></script>
+                </code>
+              </div>
+              <p>
+                To link the two file, you would have a src (short for source) attribute in the script tag
+                and have the value be the path to get to the JS file and the exact name of the file which
+                includes spelling and capitalization of the file name.
+              </p>
+              <p>
+                One common error is to know what the path to get to the file is. The easiest way to know is
+                you ask yourself, how do I get to this file from here. If it is a file by the HTML file you are 
+                using, then the path is just the name. But if it is in a folder from the HTML file you are in, then 
+                the path is going into the folder then the file name and repeat the process on if there are many folders.
+                Lastly if the file is located outside of the current folder you are in then you would go outside of
+                the folder to get to the JS file. This is all done with code.
+              </p>
+              <p>
+                If the JS file is right next to the HTML file then it is just the full name of the file.
+              </p>
+              <div className="code-box">
+                <code>
+                  <script src='app.js'></script>
+                </code>
+              </div>
+              <p>
+                If the JS file is in a folder from the HTML then you would do one . to go in and one / into the folder.
+              </p>
+              <div className="code-box">
+                <code>
+                  <script src='./js/app.js'></script>
+                </code>
+              </div>
+              <p>
+                Above code means that we are going into the js folder and then the app.js file to link.
+              </p>
+              <p>
+                Lastly, to go out you would use two .. and a / for going outside of the current folder.
+              </p>
+              <div className="code-box">
+                <code>
+                  <script src='../outerjsfolder/app.js'></script>
+                </code>
+              </div>
+              <p>
+                The top three are the easiest path but most cases you would have to do a combination of the above or go
+                through embedded folders.
+              </p>
+              <div className="code-box">
+                <code>
+                  <script src='../outerjsfolder/js/about/app.js'></script>
+                </code>
+              </div>
             </div>
 
             <div id="data-types" className="section scrollspy">
