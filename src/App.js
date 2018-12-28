@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Shared/Navbar';
-
 import Overview from './components/overview/Overview';
 import HTMLIntro from './components/html/HTMLInfo';
 import JSIntro from './components/js/JSInfo';

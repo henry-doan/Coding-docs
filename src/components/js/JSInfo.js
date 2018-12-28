@@ -45,6 +45,24 @@ class JSInfo extends Component {
             </div>
 
             <div id="files" className="section scrollspy">
+              <p>
+                To use JS in your HTML you would need a script tag.
+              </p>
+              <div className="code-box">
+                <code>
+                  <script>
+
+                  </script>
+                </code>
+              </div>
+              <p>
+                Inside the opening and closing script tags is where you can write JavaScript.
+                This way is called inline JS because we are doing JavaScript inside of our HTML
+                file. Even though this method works, it is not best practice to do so because then
+                the file is super lengthly and hard to debug. To have a separation of concerns and keep our
+                files short and simple, the best way to do JavaScript is to have all the JavaScript code 
+                in its own file.
+              </p>
               <h5>How to Make a JS File</h5>
               <p>
                 Each programming language has files that have different endings.
