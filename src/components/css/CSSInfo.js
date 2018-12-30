@@ -61,7 +61,6 @@ class CSSInfo extends Component {
                 <code>
                   &#47;&#42; in a style.css file &#42;&#47;
                   <br />
-                  &#60;style&#62;<br />
                   <dd>
                     <dl>
                       h1 &#123;
@@ -78,7 +77,6 @@ class CSSInfo extends Component {
                       &#125;
                     </dl>
                   </dd>
-                  &#60;/style&#62;
                 </code>
               </div>
             </div>
@@ -105,18 +103,69 @@ class CSSInfo extends Component {
 
             <div id="link" className="section scrollspy">
               <h5>How to connect a style sheet to the HTML document</h5>
-              <p>In the HTML file or document, in order to have the element have the styles you would have to connect it. You don't need to connect the styles if you are doing in line styling or with the style tags because it is in the document itself. For another file styles, you would have to add this line in the head of the document that says what the file is, the relationship it has and where the file is in retrospect of where you are. For example if your style.css is in the same folder then in the href you would put "style.css". If it is in side of a folder or directory, it is "foldername/style.css". If is it out side then it is "../style.css".</p>
+              <p>
+                After you created both a CSS file and a HTML file, there needs to be a way where you can
+                link the two file together.
+
+                Using the link tag in the HTML with some attributes will do the trick. The link tag will being inbetween 
+                the head tags so when the HTMl file is read from top to bottom, it will load the styles first.
+              </p>
               <div className="code-box">
                 <code>
-                  &#60;head&#62;
-                    <dd>
-                      &#60;title&#62;
-                        My Website
-                      &#60;/title&#62;<br /><br />
-                      &#60;!-- this is how you link the stylesheet to a HTML file inside of your HTML file --&#62;<br />
-                      &#60; link rel="stylesheet" type="text/css" href="style.css"&#62;
-                    </dd>
-                  &#60;/head&#62;
+                  <head>
+                    <link rel="stylesheet" type="text/css" href="styles.css" />
+                  </head>
+                </code>
+              </div>
+              <p>
+                To link the two file, you would have a rel (short for relation) attribute in the link tag
+                and have the value be stylesheet to specify that the relationship to this link is a stylesheet.
+                After the rel attribute is the type attribute to know what type of file to expect, in this case the type is
+                text and a css type. Lastly is the href to link the stylesheet where the path would be the path to 
+                get to the CSS file and the exact name of the file which includes spelling and capitalization of the file name.
+              </p>
+              <p>
+                One common error is to know what the path to get to the file is. The easiest way to know is
+                you ask yourself, how do I get to this file from here. If it is a file by the HTML file you are 
+                using, then the path is just the name. But if it is in a folder from the HTML file you are in, then 
+                the path is going into the folder then the file name and repeat the process on if there are many folders.
+                Lastly if the file is located outside of the current folder you are in then you would go outside of
+                the folder to get to the CSS file. This is all done with code.
+              </p>
+              <p>
+                If the CSS file is right next to the HTML file then it is just the full name of the file.
+              </p>
+              <div className="code-box">
+                <code>
+                  <link rel="stylesheet" type="text/css" href="styles.css" />
+                </code>
+              </div>
+              <p>
+                If the CSS file is in a folder from the HTML then you would do one . to go in and one / into the folder.
+              </p>
+              <div className="code-box">
+                <code>
+                  <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css" />
+                </code>
+              </div>
+              <p>
+                Above code means that we are going into the stylesheets folder and then the styles.css file to link.
+              </p>
+              <p>
+                Lastly, to go out you would use two .. and a / for going outside of the current folder.
+              </p>
+              <div className="code-box">
+                <code>
+                  <link rel="stylesheet" type="text/css" href="../outerjsfolder/styles.css" />
+                </code>
+              </div>
+              <p>
+                The top three are the easiest path but most cases you would have to do a combination of the above or go
+                through embedded folders.
+              </p>
+              <div className="code-box">
+                <code>
+                  <link rel="stylesheet" type="text/css" href="../outerfolder/css/contact/styles.css" />
                 </code>
               </div>
             </div>
