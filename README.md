@@ -380,7 +380,7 @@ span {
 }
 ```
 
-**Absolute** units of measures are a set size for elements. Most of the measurements are based off of the inch measurement.
+**Absolute** units of measurement are a set size for elements. Most of the measurements are based off of the inch measurement.
 
 ```CSS
 h1 {
